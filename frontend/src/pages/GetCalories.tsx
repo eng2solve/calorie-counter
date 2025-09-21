@@ -37,12 +37,10 @@ export default function GetCalories() {
     setLoading(true);
     try {
       const res = await api.post("/get-calories", data);
-      // expected response shape: { dish_name, servings, calories_per_serving, total_calories, source }
       setResult(res.data);
       toast.success("Calories fetched");
     } catch (err: any) {
       toast.error(err?.response?.data?.detail ?? "Error fetching calories");
-      navigate("/login");
     } finally {
       setLoading(false);
     }

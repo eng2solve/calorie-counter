@@ -16,5 +16,5 @@ JWT_SECRET = os.environ["JWT_SECRET"]
 JWT_ALGORITHM = os.getenv("JWT_ALGORITHM", "HS256")
 
 # Token expiration time in minutes
-ACCESS_TOKEN_EXPIRE_MINUTES = int(os.getenv("ACCESS_TOKEN_EXPIRE_MINUTES", "1"))
+ACCESS_TOKEN_EXPIRE_MINUTES = int(os.getenv("ACCESS_TOKEN_EXPIRE_MINUTES", "30"))
 RATE_LIMIT_PER_MINUTE = int(os.getenv("RATE_LIMIT_PER_MINUTE", "10"))
