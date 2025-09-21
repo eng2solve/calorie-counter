@@ -73,7 +73,7 @@ backend/
 
 
 - `backend/` – FastAPI server  
-- `frontend/` – Vite + React frontend  
+- `frontend/` – Vite + React+ Tailwindcss + shadcn  frontend  
 - `.env.example` in each side gives you a template to set up environment variables.
 
 ---
